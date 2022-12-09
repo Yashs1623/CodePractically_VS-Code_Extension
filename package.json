@@ -1,0 +1,25 @@
+{
+  "name": "codepractically",
+  "displayName": "CodePractically",
+  "description": "Snippets for long algorithms",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Yashs1623/CodePractically_VS-Code_Extension"
+  },
+  "icon": "icon.png",
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "python",
+        "path": "./snippets/snippets.code-snippets"
+      }
+    ]
+  }
+}
