@@ -57,5 +57,158 @@
             "print(bestFitness)"            
         ],
         "description": "Genetic Algorithm Starter Template"
-    }
+    },
+    "Descending order Assembly Language":{
+        "prefix": "!descendingOrder",
+        "body": [
+            "MOV SI,1100H",
+            "MOV CL,[SI]",
+            "DEC CL",
+            "REPEAT:",
+            "MOV SI,1100H",
+            "MOV CH,[SI]",
+            "DEC CH",
+            "INC SI",
+            "RECOMP:",
+            "MOV AL,[SI]",
+            "INC SI",
+            "CMP AL,[SI]",
+            "JNC AHEAD"  ,              
+            "XCHG AL,[SI]",
+            "XCHG AL,[SI-1]",
+            "AHEAD:",
+            "DEC CH",
+            "JNZ RECOMP",
+            "DEC CL",
+            "JNZ REPEAT",
+            "HLT"  
+        ],
+        "description": "Descending order Assembly Language"
+    },
+    "Ascending order Assembly Language":{
+        "prefix": "!ascendingOrder",
+        "body": [
+            "MOV SI,1100H",
+            "MOV CL,[SI]",
+            "DEC CL",
+            "REPEAT:",
+            "MOV SI,1100H",
+            "MOV CH,[SI]",
+            "DEC CH",
+            "INC SI",
+            "RECOMP:",
+            "MOV AL,[SI]",
+            "INC SI",
+            "CMP AL,[SI]",
+            "JC AHEAD",
+            "XCHG AL,[SI]",
+            "XCHG AL,[SI-1]",
+            "AHEAD:",
+            "DEC CH",
+            "JNZ RECOMP",
+            "DEC CL",
+            "JNZ REPEAT",
+            "HLT"
+        ],
+        "description": "Ascending order Assembly Language"
+    },
+    "Shortest Number Assembly Language":{
+        "prefix": "!shortestNumber",
+        "body": [
+            "MOV SI,1100H",
+            "MOV DI,1200H",
+            "MOV CL,[SI]",
+            "INC SI",
+            "MOV AL,[SI]",
+            "DEC CL",
+            "AGAIN:",
+            "INC SI",
+            "MOV BL,[SI]",
+            "CMP AL,BL",
+            "JC AHEAD",         
+            "MOV AL,BL",
+            "AHEAD:",
+            "DEC CL",
+            "JNZ AGAIN",
+            "MOV [DI],AL",
+            "HLT"   
+        ],
+        "description": "Shortest Number Assembly Language"
+    },
+    "Largest Number Assembly Language":{
+        "prefix": "!largestNumber",
+        "body": [
+            "MOV SI,1100H",
+            "MOV DI,1200H",
+            "MOV CL,[SI]",
+            "INC SI",
+            "MOV AL,[SI]",
+            "DEC CL",
+            "AGAIN:",
+            "INC SI",
+            "MOV BL,[SI]",
+            "CMP AL,BL",
+            "JNC AHEAD",
+            "MOV AL,BL",
+            "AHEAD:",
+            "DEC CL",
+            "JNZ AGAIN",
+            "MOV [DI],AL",
+            "HLT"
+        ],
+        "description": "Largest Number Assembly Language"
+    },
+    "Factorial without macros":{
+        "prefix": "!factorialwithoutmacros",
+        "body": [
+            "DATA SEGMENT",
+            "A DB 5",
+            "fact DB ?",
+            "DATA ENDS",
+            "CODE SEGMENT",
+            "         ASSUME DS:DATA,CS:CODE",
+            "START:",
+            "      MOV AX,DATA",
+            "      MOV DS,AX",
+            "      MOV AH,00",
+            "      MOV AL,A",
+            " L1:  DEC A",
+            "      MUL A",
+            "      MOV CL,A",
+            "      CMP CL,01",
+            "      JNZ L1",
+            "      MOV fact, AL",
+            "CODE ENDS",
+            "END START"
+            
+        ],
+        "description": "Factorial without macros"
+    },
+    "Factorial using macros":{
+        "prefix": "!factorialwithmacros",
+        "body": [
+            "DATA SEGMENT",
+            "A DB 5",
+            "fact DB ?",
+            "DATA ENDS",
+            "CODE SEGMENT",
+            "         ASSUME DS:DATA,CS:CODE",
+            "START:",
+            "      MOV AX,DATA",
+            "      MOV DS,AX",
+            "      MOV AH,00",
+            "      MOV AL,A",
+            " L1:  DEC A",
+            "      MUL A",
+            "      MOV CL,A",
+            "      CMP CL,01",
+            "      JNZ L1",
+            "      MOV fact, AL",
+            "CODE ENDS",
+            "END START"
+            
+        ],
+        "description": "Factorial using macros"
+    },
+
 }
