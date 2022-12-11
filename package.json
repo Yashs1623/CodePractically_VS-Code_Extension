@@ -3,9 +3,9 @@
   "displayName": "CodePractically",
   "publisher": "TechyCraftsYashShah",
   "description": "Snippets for long algorithms",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "engines": {
-    "vscode": "^1.74.0"
+    "vscode": "^1.70.0"
   },
   "repository": {
     "type": "git",
