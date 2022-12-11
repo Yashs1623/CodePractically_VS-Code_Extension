@@ -502,7 +502,7 @@
             "import re",
             "tp = open('myfile.txt', 'r')",
             "mail = r'\\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Z|a-z]{2,}\\b'",
-            "number = r'\\S[^a-zA-Z\n]+\\d+\\S[^a-zA-Z\n]'",
+            "number = r'\\S[^a-zA-Z\\n]+\\d+\\S[^a-zA-Z\\n]'",
             "sitee = r\"(http|https)://[\\w\\-]+(\\.[\\w\\-]+)+\\S*\"",
             "name = r'Mr.+|Mrs.+'",
             "m = tp.read()",
