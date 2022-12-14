@@ -2,6 +2,18 @@
 
 All notable changes to the "codepractically" extension will be documented in this file.
 
+## [1.3.5]
+
+- Added page rank and hits algorithm
+
+## [1.3.2]
+
+- Added tkinter input output snippet
+
+## [1.3.1]
+
+- Inheritance snippet changed
+
 ## [1.3.0]
 
 - Added new python snippets
