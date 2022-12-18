@@ -2,6 +2,14 @@
 
 All notable changes to the "codepractically" extension will be documented in this file.
 
+## [1.4.2]
+
+- Added more AI algorithms
+
+## [1.4.1]
+
+- Added XML Code
+
 ## [1.4.0]
 
 - Added AI Algorithms
