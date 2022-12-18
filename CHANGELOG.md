@@ -2,6 +2,10 @@
 
 All notable changes to the "codepractically" extension will be documented in this file.
 
+## [1.4.0]
+
+- Added AI Algorithms
+
 ## [1.3.5]
 
 - Added page rank and hits algorithm
