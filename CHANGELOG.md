@@ -2,6 +2,10 @@
 
 All notable changes to the "codepractically" extension will be documented in this file.
 
+## [1.4.3]
+
+- Added ADBMS algorithms
+
 ## [1.4.2]
 
 - Added more AI algorithms
